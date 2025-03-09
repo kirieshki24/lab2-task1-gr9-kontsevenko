@@ -40,3 +40,26 @@ int *generate_random_array(int size) {
   return arr;
 }
 
+int main(int argc, char *argv[]) {
+  if (argc != 2) {
+    printf("Использование: %s <размер_массива>\n", argv[0]);
+    return 1;
+  }
+
+  int size = atoi(argv[1]);
+  int *arr = generate_random_array(size);
+
+  printf("Исходный массив:\n");
+  for (int i = 0; i < size; i++) {
+    printf("%d ", arr[i]);
+  }
+  printf("\n");
+
+  printf("Максимальные числа:\n");
+  for (int i = 0; i < size; i++) {
+    printf("%d -> %d\n", arr[i], max_number(arr[i]));
+  }
+
+  free(arr);
+  return 0;
+}
