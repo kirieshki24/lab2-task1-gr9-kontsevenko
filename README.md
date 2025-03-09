@@ -1,11 +1,25 @@
 # Overview
 
-It is public template of assignment `"labrabota 3"` for FPMI students
+Этот репозиторий содержит шаблон для выполнения лабораторной работы №2 по дисциплине "Технологии программирования мобильных приложений". 
+Проект включает базовую структуру для разработки консольных приложений на языке C с интеграцией инструментов автоматизации сборки.
 
 # Usage
 
-Please, edit README and add some details, as instance **{add your last name, first name and group number}**.
+**Концевенко Алексей, группа 9**
+
+Для работы с проектом:
+1. Клонируйте репозиторий.
+2. Импортируйте проект в [Repl.it](https://repl.it) через меню "Import from GitHub".
+3. Настройте файл `.replit` для указания точки входа (например, `main.c`).
+4. Используйте `make` для сборки проекта и `./bin/app` для запуска.
 
 # Building
 
-Please, import repository and use for repl.it project, which is defined in the assignment "labrabota 3".
+Для сборки проекта требуется:
+- Компилятор `gcc`
+- Утилита `make`
+
+Инструкция:
+```bash
+make clean && make all  # Очистка и полная пересборка
+./bin/app               # Запуск приложения
