@@ -25,3 +25,18 @@ int max_number(int num) {
   }
   return atoi(digits);
 }
+
+/**
+ * @brief Генерирует массив случайных чисел.
+ * @param size Размер массива.
+ * @return Указатель на массив.
+ */
+int *generate_random_array(int size) {
+  int *arr = malloc(size * sizeof(int));
+  srand(time(NULL));
+  for (int i = 0; i < size; i++) {
+    arr[i] = rand() % 1000; // Числа от 0 до 999
+  }
+  return arr;
+}
+
