@@ -35,7 +35,7 @@ int *generate_random_array(int size) {
   int *arr = malloc(size * sizeof(int));
   srand(time(NULL));
   for (int i = 0; i < size; i++) {
-    arr[i] = rand() % 1000; // Числа от 0 до 999
+    arr[i] = rand() % 100000; // Числа от 0 до 99999
   }
   return arr;
 }
