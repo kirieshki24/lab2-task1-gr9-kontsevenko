@@ -47,6 +47,10 @@ int main(int argc, char *argv[]) {
   }
 
   int size = atoi(argv[1]);
+  if (size < 1) {
+    printf("Ошибка: неверный размер\n");
+    return 1;
+  }
   int *arr = generate_random_array(size);
 
   printf("Исходный массив:\n");
